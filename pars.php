@@ -29,23 +29,6 @@ $url = $_POST["url"];
     	echo $key.". ". $value."<br>";
     }
 
-    $ch = curl_init();
-    $timeout = 5;
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-    $html = curl_exec($ch);
-    curl_close($ch);
-
-
-
-
-    /*foreach($contentArray->find('img') as $element) 
-       echo $element->src . '<br>';*/
-   /* foreach ($contentArray->getElementsByTagName('alt') => $value) {
-        echo $value -> getAttribute('alt');
-        echo "<br/>";
-    }*/
 } else {
     echo("$url is not a valid URL");
 }

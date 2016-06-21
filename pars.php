@@ -9,10 +9,22 @@ if ($result = $mysqli->query($query)) {
     /* fetch associative array */
     while ($row = $result->fetch_assoc()) {
         printf ("%s \n", $row["id_regula"]);
+        printf ("%s \n", $row["nume"]);
+        printf ("%s \n", $row["context"]);
+        printf ("%s \n",$row["entitate "]);
+        printf ("%s \n", $row["fail"]);
+        printf ("%s \n", $row["feedback"]."<br />");
     }
 
     /* free result set */
     $result->free();
+}
+//get regulă 
+foreach($contentArray->getElementsByTagName('body') as $frame) {
+        # Show the <a href>
+        echo $frame->getAttribute('frames');
+        echo "<br />";
+
 }
 
 /* close connection */

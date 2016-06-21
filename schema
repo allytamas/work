@@ -1,0 +1,36 @@
+1.save each unde in array (si line nr.)
+
+2.for each el in array
+	cat timp am ce cauta ce1. ce2. c3
+	daca fail -> fail + 1
+	insert code line nr. in locuri fail 
+
+3. rezultat = fail / nr. total el in array
+
+4. daca fail > 0 afisam feedback fail si “(aveti fail situatii necorespunzatoare) la randurile> ….. ” 
+
+//mai detaliat
+-get DOC.
+-get rule i -> insert in tabelul detalii-regula_id si verificari
+-get context-> array associative
+-find entitate in each elem. in context
+	{ compara rezulatul DA/NU cu  fail 
+			if fail { $fail ++
+				$pozarray
+
+$scor = $fail/$context.length
+update detalii set(poz. fail= implode(“,”..)) scor = $scor
+
+
+//una din reguli
+2
+no-frames
+body
+frame, frameset, iframe
+!= -1
+documentul nu trebuie sa contina frameuri (elemente frame, frameset, iframe)
+
+
+implode(), explode - php, array
+
+
